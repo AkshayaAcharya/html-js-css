@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 1</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <span class="header__logo-box">
+        <img
+          class="header__logo"
+          src="images/logo2.jpg"
+          alt="<a href='https://www.freepik.com/free-vector/ecofood-logo-template_944341.htm#query=food%20icon&position=48&from_view=search&track=ais'>Image by vectortwins</a> on Freepik"
+          srcset=""
+        />
+      </span>
+      <nav class="header__nav">
+        <ul class="header__nav--list">
+          <li class="header__nav--list-1">
+            <a href="#home" class="header__nav--link">Home</a>
+          </li>
+          <li class="header__nav--list-1">
+            <a href="#about" class="header__nav--link">About Us</a>
+          </li>
+          <li class="header__nav--list-2">
+            <a href="#services" class="header__nav--link">Services</a>
+          </li>
+          <li class="header__nav--list-3">
+            <a href="#contact" class="header__nav--link">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="home" id="home">
+      <!-- <div class="slider">
+        <input type="radio" name="radio-btn" id="radio1" />
+        <input type="radio" name="radio-btn" id="radio2" />
+        <input type="radio" name="radio-btn" id="radio3" />
+        <input type="radio" name="radio-btn" id="radio4" />
+        <div class="banners">
+          <div class="first banner">
+            <img src="images/food1.jpg" alt="" id="f1" />
+          </div>
+          <div class="banner">
+            <img src="images/food2.jpg" alt="" id="f2" />
+          </div>
+          <div class="banner">
+            <img src="images/food3.jpg" alt="" id="f3" />
+          </div>
+          <div class="banner">
+            <img src="images/food4.jpg" alt="" id="f4" />
+          </div>
+        </div>
+
+        <div class="label-div">
+          <label for="radio1" class="radio-label"></label>
+          <label for="radio2" class="radio-label"></label>
+          <label for="radio3" class="radio-label"></label>
+          <label for="radio4" class="radio-label"></label>
+        </div>
+      </div> -->
+      <div class="banner">
+        <div class="banner-slides">
+          <!-- radio-btns -->
+          <input type="radio" name="food" id="radio1" />
+          <input type="radio" name="food" id="radio2" />
+          <input type="radio" name="food" id="radio3" />
+          <input type="radio" name="food" id="radio4" />
+
+          <!-- labels for radio -->
+          <div class="radio-label">
+            <label for="radio1" class="label-btn"></label>
+            <label for="radio2" class="label-btn"></label>
+            <label for="radio3" class="label-btn"></label>
+            <label for="radio4" class="label-btn"></label>
+          </div>
+
+          <div class="first slide"><img src="images/food1.jpg" alt="" /></div>
+          <div class="slide"><img src="images/food2.jpg" alt="" /></div>
+          <div class="slide"><img src="images/food3.jpg" alt="" /></div>
+          <div class="slide"><img src="images/food4.jpg" alt="" /></div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about">
+      <h2 class="section_heading">What we are</h2>
+      <div class="about_desc">
+        <span class="about_img">
+          <img src="images/about.jpg" alt="" />
+        </span>
+        <div class="about_paras">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+            quia nihil consequuntur repellat consectetur! Praesentium molestiae
+            eius beatae ducimus quibusdam?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+            eum beatae aspernatur natus esse debitis ad veniam provident
+            exercitationem. Explicabo repudiandae perspiciatis fuga consectetur
+            et error dolorem laudantium eum voluptates.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
+            facere?
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="services" class="services">
+      <h2 class="section_heading">What we provide</h2>
+      <div class="services_card">
+        <div class="card">
+          <span class="card_img">
+            <img src="images/food1.jpg" alt="" />
+          </span>
+          <div class="card_desc">
+            <p>Lorem ipsum dolor</p>
+            <p>Lorem ipsum dolor, sit amet</p>
+            <p>Lorem ipsum dolor, sit amet Lorem ipsum dolor</p>
+            <button class="btn">Explore</button>
+          </div>
+        </div>
+        <div class="card">
+          <span class="card_img">
+            <img src="images/food2.jpg" alt="" />
+          </span>
+          <div class="card_desc">
+            <p>Lorem ipsum dolor</p>
+            <p>Lorem ipsum dolor, sit amet</p>
+            <p>Lorem ipsum dolor, sit amet Lorem ipsum dolor</p>
+            <button class="btn">Explore</button>
+          </div>
+        </div>
+        <div class="food_gallery">
+          <img src="images/food4.jpg" alt="" class="gallery_img" />
+          <img src="images/food2.jpg" alt="" class="gallery_img" />
+          <img src="images/food3.jpg" alt="" class="gallery_img" />
+          <img src="images/food1.jpg" alt="" class="gallery_img" />
+          <img src="images/food3.jpg" alt="" class="gallery_img" />
+          <img src="images/food1.jpg" alt="" class="gallery_img" />
+          <img src="images/food2.jpg" alt="" class="gallery_img" />
+          <img src="images/food1.jpg" alt="" class="gallery_img" />
+          <img src="images/food4.jpg" alt="" class="gallery_img" />
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <h2 class="section_heading">Get in touch with us</h2>
+      <form action="" class="contact_form">
+        <label for="fname">Enter Your Name:</label>
+        <input type="text" name="contact" id="fname" />
+        <label for="email">Enter Your email:</label>
+        <input type="text" name="contact" id="fname" />
+        <label for="message">Your Message:</label>
+        <textarea name="" id="message" cols="30" rows="10"></textarea>
+        <button class="form-btn btn">Submit</button>
+      </form>
+    </section>
+    <footer>
+      <p>&copy; Copyright @akshayaacharya</p>
+      <div>
+        <span class="footer-span"
+          ><a href="https://github.com/AkshayaAcharya" target="_blank"
+            ><img src="images/github.png" alt="" /></a
+        ></span>
+        <span class="footer-span"
+          ><a href="https://www.linkedin.com/in/acharyaakshaya/" target="_blank"
+            ><img src="images/linkedin.png" alt="" /></a
+        ></span>
+      </div>
+    </footer>
+  </body>
+</html>
