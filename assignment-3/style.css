@@ -1,0 +1,39 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-weight: 400;
+  font-size: 2.4rem;
+}
+
+header {
+  text-align: center;
+  margin: 2rem;
+}
+
+.api_btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.btn {
+  border: none;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  box-shadow: 0 0 0.4rem 0 rgba(0, 0, 0, 0.5);
+}
+
+.btn:hover {
+  border: 0.1rem solid rgba(0, 0, 0, 0.5);
+}
