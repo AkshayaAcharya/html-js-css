@@ -22,94 +22,27 @@ const photos = document.querySelector(".api_btns--btn3");
 const todos = document.querySelector(".api_btns--btn4");
 const users = document.querySelector(".api_btns--btn5");
 
-const fetchPosts = function () {
-  return fetch("https://jsonplaceholder.typicode.com/posts").then((res) => {
+const fetchData = function (data) {
+  return fetch(`https://jsonplaceholder.typicode.com/${data}`).then((res) => {
     if (!res.ok) throw new Error(`${error}, ${res.status}`);
     return res.json();
   });
 };
 
-const getPosts = async function () {
+const getData = async function (data) {
+  console.log(data);
   try {
-    console.log("Fetching posts...");
-    const res = await fetchPosts();
+    console.log(`Fetching ${data}...`);
+    const res = await fetchData(data);
     console.log(res);
-    console.log("Fetching posts finished...");
-  } catch (err) {
-    console.log(err);
-  }
-};
-const fetchAlbums = function () {
-  return fetch("https://jsonplaceholder.typicode.com/albums").then((res) => {
-    if (!res.ok) throw new Error(`${error}, ${res.status}`);
-    return res.json();
-  });
-};
-
-const getAlbums = async function () {
-  try {
-    console.log("Fetching albums...");
-    const res = await fetchPosts();
-    console.log(res);
-    console.log("Fetching albums finished...");
-  } catch (err) {
-    console.log(err);
-  }
-};
-const fetchPhotos = function () {
-  return fetch("https://jsonplaceholder.typicode.com/photos").then((res) => {
-    if (!res.ok) throw new Error(`${error}, ${res.status}`);
-    return res.json();
-  });
-};
-
-const getPhotos = async function () {
-  try {
-    console.log("Fetching photos...");
-    const res = await fetchPosts();
-    console.log(res);
-    console.log("Fetching photos finished...");
-  } catch (err) {
-    console.log(err);
-  }
-};
-const fetchTodos = function () {
-  return fetch("https://jsonplaceholder.typicode.com/todos").then((res) => {
-    if (!res.ok) throw new Error(`${error}, ${res.status}`);
-    return res.json();
-  });
-};
-
-const getTodos = async function () {
-  try {
-    console.log("Fetching todos...");
-    const res = await fetchPosts();
-    console.log(res);
-    console.log("Fetching todos finished...");
-  } catch (err) {
-    console.log(err);
-  }
-};
-const fetchUsers = function () {
-  return fetch("https://jsonplaceholder.typicode.com/users").then((res) => {
-    if (!res.ok) throw new Error(`${error}, ${res.status}`);
-    return res.json();
-  });
-};
-
-const getUsers = async function () {
-  try {
-    console.log("Fetching users...");
-    const res = await fetchPosts();
-    console.log(res);
-    console.log("Fetching users finished...");
+    console.log(`Fetching ${data} finished...`);
   } catch (err) {
     console.log(err);
   }
 };
 
-posts.addEventListener("click", getPosts);
-albums.addEventListener("click", getAlbums);
-photos.addEventListener("click", getPhotos);
-todos.addEventListener("click", getTodos);
-users.addEventListener("click", getUsers);
+posts.addEventListener("click", getData.bind(null, "posts"));
+albums.addEventListener("click", getData.bind(null, "albums"));
+photos.addEventListener("click", getData.bind(null, "photos"));
+todos.addEventListener("click", getData.bind(null, "todos"));
+users.addEventListener("click", getData.bind(null, "users"));
