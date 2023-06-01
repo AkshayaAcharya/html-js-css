@@ -122,16 +122,20 @@ a:active {
 section {
   padding: 2rem;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 section p {
   display: flex;
+  /* gap: 2rem; */
   align-items: center;
   justify-content: center;
   margin: auto;
   padding: 0.5rem;
   width: 80%;
-  height: 25%;
+  height: auto;
   background-color: #eea5a5;
   margin-bottom: 0.2rem;
 }
