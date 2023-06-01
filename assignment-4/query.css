@@ -1,0 +1,71 @@
+@media screen and (max-width: 48em) {
+  .logo:link,
+  .logo:visited {
+    font-size: 3rem;
+  }
+  .navbar {
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    gap: 0.2rem;
+    align-items: center;
+    transition: all 0.8s ease-in;
+    backdrop-filter: blur(2rem);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-list {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .nav-list-link .nav-sub-list {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  .nav-list-link,
+  .sub-link {
+    height: auto;
+    width: 100%;
+  }
+  .nav-open .navbar {
+    opacity: 1;
+    pointer-events: all;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .menu-btns {
+    display: block;
+  }
+  .nav-open .menu[name="close-outline"] {
+    display: block;
+  }
+  .nav-open .menu[name="menu-outline"] {
+    display: none;
+  }
+  .hero {
+    font-size: 3rem;
+  }
+
+  .hero h1 {
+    text-align: center;
+  }
+  .nav-list {
+    gap: 3rem;
+  }
+
+  .nav-list-link,
+  .sub-link {
+    padding: 1.2rem;
+  }
+}

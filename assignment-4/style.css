@@ -1,0 +1,141 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-weight: 400;
+  line-height: 1;
+  font-size: 1.6rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: rgb(213, 245, 213);
+  color: #171717;
+  align-items: center;
+}
+
+.logo:link,
+.logo:visited {
+  text-decoration: none;
+  color: #171717;
+  font-weight: 700;
+  font-size: 3.2rem;
+}
+
+.nav-list {
+  display: flex;
+  gap: 5rem;
+  cursor: pointer;
+}
+
+.nav-list-link,
+.sub-link {
+  position: relative;
+  list-style: none;
+  padding: 2rem;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #171717;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+  border-bottom: 0.2rem solid #171717;
+}
+
+.sub-link a:link,
+.sub-link a:visited {
+  text-decoration: none;
+  color: #171717;
+}
+
+.sub-link {
+  display: none;
+}
+
+.nav-list-link:hover {
+  background-color: #befaec;
+}
+
+.nav-list-link .nav-sub-list {
+  position: absolute;
+  left: 0;
+  top: 5rem;
+  background-color: inherit;
+  width: 100%;
+}
+
+.nav-list-link:hover .sub-link {
+  display: block;
+  /* margin-bottom: 2rem; */
+}
+
+.sub-link:hover {
+  background-color: #93f4dd;
+}
+
+.menu-btns {
+  background: none;
+  border: none;
+  outline: none;
+  display: none;
+  cursor: pointer;
+}
+
+.menu {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.menu[name="close-outline"] {
+  display: none;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 4rem;
+}
+
+section {
+  padding: 2rem;
+  height: 100vh;
+}
+
+section p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 0.5rem;
+  width: 80%;
+  height: 25%;
+  background-color: #eea5a5;
+  margin-bottom: 0.2rem;
+}
+
+section p:last-child {
+  margin-bottom: 0;
+}
