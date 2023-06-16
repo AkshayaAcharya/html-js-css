@@ -9,7 +9,7 @@ let maxLength;
 const fetchImages = async function () {
   try {
     const response = await fetch(
-      `https://api.pexels.com/v1/curated?search=nature`,
+      `https://api.pexels.com/v1/search?query=cars`,
       {
         method: "GET",
         headers: {
